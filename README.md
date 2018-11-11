@@ -11,7 +11,9 @@ Please visit that website to get details on getting an API key and documentation
 - This wrapper is still early in production and may contain bugs. Please report them to the Discord server above.
 
 **Installing**
+
 Run on your Command Prompt:
+
 `pip install -U bananapy`
 
 **Usage Example**
