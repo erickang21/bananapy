@@ -23,5 +23,5 @@ import bananapy
 
 client = bananapy.Client("token")
 # Using abandon endpoint
-await client.abandon("I love fortnite") # returns the Buffer```
-
+await client.abandon("I love fortnite") # returns the Buffer
+```
