@@ -23,6 +23,7 @@ class Client:
     async def _get(self, endpoint, params):
         """
         Private function to request from the API.
+        
 
         This should not be called directly.
         """
