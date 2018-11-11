@@ -20,13 +20,15 @@ class Client:
         self.token = token
         self.base_url = "https://bananapi.ml/api/"
 
-    async def _get(self, endpoint):
+    async def _get(self, endpoint, params):
         """
         Private function to request from the API.
 
         This should not be called directly.
         """
-        res = await self.session.get(self.base_url + endpoint)
+        headers = { "Authorization": self.token }
+        res = await self.session.get(self.base_url + endpoint, headers=headers, params=params)
+        msg = ""
         if res.status != 200:
             try:
                 resp = await res.json()
@@ -36,6 +38,12 @@ class Client:
             raise Error("{}: {}".format(res.status, resp))
         else:
             return res
+        
+    async def abandon(self, text):
+        res = await self._get("abandon", { "text": text })
+        res = await res.read()
+        return res
+        
 
 
 
