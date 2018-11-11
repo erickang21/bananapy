@@ -1,5 +1,5 @@
 import aiohttp 
-from box import Box
+
 
 class Error(Exception):
     """
