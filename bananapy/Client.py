@@ -84,7 +84,7 @@ class Client:
         return res
 
     async def legends(self, text):
-        res = await self._get("abandon", { "text": text })
+        res = await self._get("legends", { "text": text })
         res = await res.read()
         return res
 
