@@ -1,4 +1,5 @@
 # BananaPY - BananAPI Lib for Python
+## API has been discontinued.
 
 This wrapper is made to support the API of https://bananapi.ml.
 
