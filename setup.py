@@ -19,3 +19,5 @@ setuptools.setup(
     include_package_data=True,
     install_requires=['aiohttp>=2.0.0']
 )
+
+if __name__ == 'main': print('main file')
